@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MP2</title>
+  <!-- Google Fonts Link For Icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <!-- nav header -->
+  <header>
+    <nav class="navbar">
+      <span class="hamburger-btn material-symbols-rounded">menu</span>
+      <a href="index.html" class="logo"><h2>NEXUS</h2></a>
+      <ul class="links">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="toggle"></div>
+        <li><a href="#">SHOP</a></li>
+        <li><a href="#" id="login">LOGIN</a></li>
+        <li><a href="#">CART</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="blur-bg-overlay"></div><br><br>
+  <div class="form-popup"></div><br><br>
+<br>
+  <!-- content -->
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+        <div class="front">
+            <img src="https://media.tenor.com/x7BKZxNOxz0AAAAC/cyberpunk-2077.gif" alt="">
+            <div class="text">
+                <span class="text-1">Every new friend is a <br> new adventure</span>
+                <span class="text-2">Let's get connected</span>
+            </div>
+        </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+            <div class="login-form">
+                <div class="title">Login</div>
+                <form action="#">
+                    <div class="input-boxes">
+                        <div class="input-box">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Enter your password" required>
+                        </div>
+                        <div class="text"><a href="#" id="password">Forgot password?</a></div>
+                        <div class="button input-box">
+                            <input type="submit" value="Sumbit">
+                        </div>
+                        <div class="text sign-up-text">Don't have an account? <label for="flip">Signup now</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="signup-form">
+                <div class="title">Signup</div>
+                <form action="#">
+                    <div class="input-boxes">
+                        <div class="input-box">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Enter your password" required>
+                        </div>
+                        <div class="button input-box">
+                            <input type="submit" value="Sumbit">
+                        </div>
+                        <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- script -->
+<script src="login.js" defer></script>
+</body>
+</html>
