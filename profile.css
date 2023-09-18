@@ -1,0 +1,248 @@
+/* Google Fonts - Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Sportypo';
+    src: url('SportypoReguler-OVGwe.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Bebas Neue';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 0 5px;
+}
+/* nav */
+.navbar {
+    display: flex;
+    padding: 22px 0;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.navbar .hamburger-btn {
+    display: none;
+    color: #090909;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.navbar .logo {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Sportypo';
+    color: #4B7364;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: none;
+    color: #4B7364;
+    cursor: pointer;
+}
+
+.navbar .links a {
+    color: #4B7364;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.1s ease;
+}
+
+.navbar .links a:hover {
+    color: #98D5BE;
+}
+
+.navbar .login-btn {
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #275360;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+
+
+
+@media (max-width: 500px) {
+    .navbar :is(.hamburger-btn, .close-btn) {
+        display: block;
+        color: #98D5BE;
+    }
+
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .navbar .logo h2 {
+        font-size: 1.4rem;
+    }
+
+    .navbar .links {
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        left: -100%;
+        display: block;
+        height: 100vh;
+        width: 100%;
+        padding-top: 60px;
+        text-align: center;
+        background: #fff;
+        transition: 0.2s ease;
+    }
+
+    .navbar .links.show-menu {
+        left: 0;
+    }
+
+    .navbar .links a,
+    .toggle {
+        display: inline-flex;
+        margin: 20px 0;
+        font-size: 1.2rem;
+        color: #000;
+    }
+
+    .navbar .links a:hover {
+        color: #98D5BE;
+    }
+
+    .navbar {
+        font-size: 0.9rem;
+        padding: 7px 10px;
+    }
+}
+
+/* toggle */
+body.dark {
+    background-color: #18191a;
+}
+
+.toggle {
+    position: relative;
+    height: 20px;
+    width: 60px;
+    border-radius: 100px;
+    background-color: #f1f0f0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.toggle::before {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: #162E2E;
+    border-radius: 50%;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle.active::before {
+    background-color: #162E2E;
+    left: calc(100% - 20px - 14px);
+}
+/* content */
+.d-flex {
+    display: flex; 
+    flex-wrap: wrap; 
+}
+.d-flex > div {
+    flex: 1; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+img{
+    margin: 5px 10px 0 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#left{
+    background: #162E2E;
+    border-radius: 10px;
+
+}
+#right{
+    background: #4B7364;
+    border-radius: 10px;
+}
+.info{
+    color: #98D5BE;
+    text-align: center;
+}
+
+button , input, #edit-button, #save-button{
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue';
+    background-color: #98D5BE;
+    width: 120px;
+    height: 30px;
+    border: 0px solid #162E2E;
+    border-radius: 10px;
+    color: #162E2E;
+}
+h4, p{
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue';
+}
+.cart{
+    text-align: start;
+    width: 300px;
+    height: 30px;
+}
+a{
+    text-decoration: none;
+}
+form{
+    margin-bottom: 5px;
+}
+label{
+    color: #98D5BE;
+}
+input[type = "file"]{
+    display: none;
+    font-family: 'Bebas Neue' ;
+    background-color: #98D5BE;
+}
+
+

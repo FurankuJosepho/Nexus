@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="profile.css">
+
+</head>
+
+<body>
+    <!-- nav header -->
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="index.html" class="logo">
+                <h2>NEXUS</h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <div class="toggle"></div>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#" id="login">LOGIN</a></li>
+                <li><a href="#">CART</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="blur-bg-overlay"></div><br><br>
+    <div class="form-popup"></div><br><br>
+    <div class="d-flex mb-3">
+        <div id="left" class="p-2 flex-fill">
+            <img id="profile-image"
+                src="https://cdn.oneesports.gg/cdn-data/2022/10/MLBB_MPL_PH_S10_MVP_BlacklistInternational_OhMyV33nus.webp"
+                alt="">
+            <br>
+            <center>
+                 <!-- Input for uploading a new image -->
+            <input type="file" id="image-upload" accept="image/*">
+            </center>
+            <div class="info">
+                <form id="name-form">
+                    <input id="name" type="text" placeholder="Name">
+                </form>
+                <form id="username-form">
+                    <input id="username" type="text" placeholder="Username">
+                </form>
+                <div>
+                    <center>
+                        <button id="edit-button">
+                            <h4>EDIT PROFILE</h4>
+                        </button>
+                        <button id="save-button" style="display: none;">
+                            <h4>SAVE CHANGES</h4>
+                        </button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="right" class="p-2 flex-fill">
+        <div class="info"><br>
+            <p class="cart">List of Cart:</p> <br>
+            <button class="cart"> </button> <br>
+            <button class="cart"> </button> <br>
+            <button class="cart"> </button><br>
+            <p class="cart">Recently Played:</p><br>
+            <button class="cart"> </button> <br>
+            <button class="cart"></button><br>
+            <button class="cart"></button><br>
+        </div>
+    </div>
+    </div>
+    <script src="profile.js"></script>
+</body>
+
+</html>
