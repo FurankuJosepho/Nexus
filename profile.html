@@ -29,6 +29,8 @@
             </ul>
         </nav>
     </header>
+
+    
     <div class="blur-bg-overlay"></div><br><br>
     <div class="form-popup"></div><br><br>
     <div class="d-flex mb-3">
@@ -39,11 +41,12 @@
             <br>
             <center>
                  <!-- Input for uploading a new image -->
-            <input type="file" id="image-upload" accept="jpg.">
+            <label for="image-upload" class="upload">Choose Picture</label>
+            <input type="file" id="image-upload" class="upload" accept="jpg.">
             </center>
             <div class="info">
                 <form id="name-form">
-                    <input id="name" type="text" placeholder="Name">
+                    <input id="name" type="text" placeholder="Name" class="Name">
                 </form>
                 <form id="username-form">
                     <input id="username" type="text" placeholder="Username">
@@ -63,14 +66,14 @@
     </div>
     <div id="right" class="p-2 flex-fill">
         <div class="info"><br>
-            <p class="cart">List of Cart:</p> <br>
-            <button class="cart"> </button> <br>
-            <button class="cart"> </button> <br>
-            <button class="cart"> </button><br>
-            <p class="cart">Recently Played:</p><br>
-            <button class="cart"> </button> <br>
-            <button class="cart"></button><br>
-            <button class="cart"></button><br>
+            <p class="cartTi">List of Cart:</p> <br>
+            <div class="cart"> </div> <br>
+            <div class="cart"> </div> <br>
+            <div class="cart"> </div><br>
+            <p class="cartTi">Recently Played:</p><br>
+            <div class="cart"> </div> <br>
+            <div class="cart"></div><br>
+            <div class="cart"></div><br>
         </div>
     </div>
     </div>

@@ -32,6 +32,7 @@ header {
 }
 /* nav */
 .navbar {
+    position: sticky;
     display: flex;
     padding: 22px 0;
     align-items: center;
@@ -193,12 +194,19 @@ img{
     height: 200px;
     border-radius: 50%;
 }
-#left{
+#left{  
+    margin-left: 50px;
+    width: 251px;
+    height: 554px;
     background: #162E2E;
     border-radius: 10px;
-
+}
+.Name {
+    margin-top: 50px;
 }
 #right{
+    width: 703px;
+    height: 554px;
     background: #4B7364;
     border-radius: 10px;
 }
@@ -208,10 +216,12 @@ img{
 }
 
 button , input, #edit-button, #save-button{
+    text-align: center;
     font-size: 1.3rem;
     font-family: 'Bebas Neue';
+    margin: 3px 0;
     background-color: #98D5BE;
-    width: 120px;
+    width: 187px;
     height: 30px;
     border: 0px solid #162E2E;
     border-radius: 10px;
@@ -222,8 +232,11 @@ h4, p{
     font-family: 'Bebas Neue';
 }
 .cart{
+    margin-left: 55px;
+    border-radius: 10px;
     text-align: start;
-    width: 300px;
+    background-color: #98D5BE;
+    width: 500px;
     height: 30px;
 }
 a{
@@ -233,12 +246,32 @@ form{
     margin-bottom: 5px;
 }
 label{
+    padding: 30px;
     color: #98D5BE;
-}
-input[type = "file"]{
-    display: none;
-    font-family: 'Bebas Neue' ;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue';
+    margin: 5px 0;
     background-color: #98D5BE;
+    width: 187px;
+    height: 78px;
+    border: 0px solid #162E2E;
+    border-radius: 10px;
+    color: #162E2E;
+    display: none;
+
+}
+.cartTi{
+    text-align: start;
+    width: 300px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 55px;
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue';
+}
+input[type="file"]{
+    display: none;
 }
 
 
