@@ -1,156 +1,233 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 @font-face {
-    font-family: 'Sportypo';
-    src: url('Nexus.ttf') format('truetype');
+  font-family: "Sportypo";
+  src: url("Nexus.ttf") format("truetype");
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    width: 100%;
-    font-family: 'Bebas Neue';
-    display: flex;
+  height: 100vh;
+  width: 100%;
+  font-family: "Bebas Neue";
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease-in-out;
   background-color: #030404;
+  overflow-x: hidden;
 }
 
 header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    padding: 0 10px;
+  position: sticky;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 100rem;
+  width: 100%;
+  z-index: 10;
+  padding: 0 10px;
+  border: 2px solid red;
 }
 
 .navbar {
-    display: flex;
-    padding: 22px 0;
-    align-items: center;
-    max-width: 700px;
-    margin: 0 auto;
-    justify-content: space-between;
+  display: flex;
+  padding: 22px 0;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .navbar .hamburger-btn {
-    display: none;
-    color: #090909;
-    cursor: pointer;
-    font-size: 1.5rem;
+  display: none;
+  color: #090909;
+  cursor: pointer;
+  font-size: 1.5rem;
 }
 
 .navbar .logo {
-    gap: 10px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-family: 'Sportypo';
-    color: #4B7364;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Sportypo";
+  color: #4b7364;
 }
-#login{
-    color: #98D5BE;
+#login {
+  color: #98d5be;
 }
-#password{
-    color: #162E2E;
+#password {
+  color: #162e2e;
 }
 .navbar .links {
-    display: flex;
-    gap: 35px;
-    list-style: none;
-    align-items: center;
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  align-items: center;
 }
 
 .navbar .close-btn {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    display: none;
-    color: #4B7364;
-    cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: none;
+  color: #4b7364;
+  cursor: pointer;
 }
 
 .navbar .links a {
-    color: #4B7364;
-    font-size: 1.1rem;
-    font-weight: 500;
-    text-decoration: none;
-    transition: 0.1s ease;
+  color: #4b7364;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.1s ease;
 }
 
 .navbar .links a:hover {
-    color: #98D5BE;
+  color: #98d5be;
 }
 
 .navbar .login-btn {
-    border: none;
-    outline: none;
-    background: #fff;
-    color: #275360;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 10px 18px;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: 0.15s ease;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #275360;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.15s ease;
 }
 
 /* Media Query 500px */
 @media (max-width: 500px) {
-    .navbar :is(.hamburger-btn, .close-btn) {
-        display: block;
-    }
+  .navbar :is(.hamburger-btn, .close-btn) {
+    display: block;
+  }
 
-    .navbar {
-        padding: 15px 0;
-    }
+  .navbar {
+    padding: 15px 0;
+  }
 
-    .navbar .logo img {
-        display: none;
-    }
+  .navbar .logo img {
+    display: none;
+  }
 
-    .navbar .logo h2 {
-        font-size: 1.4rem;
-    }
+  .navbar .logo h2 {
+    font-size: 1.4rem;
+  }
 
-    .navbar .links {
-        position: fixed;
-        top: 0;
-        z-index: 10;
-        left: -100%;
-        display: block;
-        height: 100vh;
-        width: 100%;
-        padding-top: 60px;
-        text-align: center;
-        background: #fff;
-        transition: 0.2s ease;
-    }
+  .navbar .links {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    left: -100%;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    padding-top: 60px;
+    text-align: center;
+    background: #fff;
+    transition: 0.2s ease;
+  }
 
-    .navbar .links.show-menu {
-        left: 0;
-    }
+  .navbar .links.show-menu {
+    left: 0;
+  }
 
-    .navbar .links a, .toggle {
-        display: inline-flex;
-        margin: 20px 0;
-        font-size: 1.2rem;
-        color: #000;
-    }
+  .navbar .links a,
+  .toggle {
+    display: inline-flex;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #000;
+  }
 
-    .navbar .links a:hover {
-        color: #98D5BE;
-    }
+  .navbar .links a:hover {
+    color: #98d5be;
+  }
 
-    .navbar {
-        font-size: 0.9rem;
-        padding: 7px 10px;
+  .navbar {
+    font-size: 0.9rem;
+    padding: 7px 10px;
+  }
+}
+
+/* Contents */
+.container {
+  /* border: 2px solid red; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.Hero {
+  object-fit: cover;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 43rem;
+  z-index: -1;
+}
+.mainTitle {
+    font-family: "Sportypo";
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    padding: 20px 0;
+}
+.mainSentence{
+    font-family: "Bebas Neue";
+    letter-spacing: 3px;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0;
+}
+.btnLinks {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    background-color: #162e2e;
+    color: #98d5be !important;
+    margin: 10px 29rem;
+    border-radius: 20px;
+}
+
+/* Contain 2 */
+.recommendation {
+    color: #98d5be;
+    letter-spacing: 2px;
+}
+
+/* Small Screen */
+@media (max-width: 576px) {
+    .container{
+        max-width: 576px;
+    }
+}
+/* Medium Screen */
+@media (max-width: 768px) {
+    .container{
+        max-width: 768px;
+    }
+}
+/* Large Screen */
+@media (max-width: 992px) {
+    .container{
+        max-width: 992px;
+    }
+}
+/* Extra Large Screen */
+@media (max-width: 1200px) {
+    .container{
+        max-width: 1200px;
     }
 }
