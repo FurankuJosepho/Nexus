@@ -13,8 +13,8 @@ hamburgerBtn.addEventListener("click", () => {
 // Hide mobile menu
 hideMenuBtn.addEventListener("click", () =>  hamburgerBtn.click());
 // toggle
-const body = document.querySelector("body"),
-        toggle = document.querySelector(".toggle");
+const body = document.querySelector("body")
+const toggle = document.querySelector(".toggle");
       let getMode = localStorage.getItem("mode");
       if (getMode && getMode === "dark") {
         body.classList.add("dark");
