@@ -43,7 +43,7 @@ header {
 
 .navbar .hamburger-btn {
     display: none;
-    color: #4B7364;
+    color: #4B7364;;
     cursor: pointer;
     font-size: 1.5rem;
 }
