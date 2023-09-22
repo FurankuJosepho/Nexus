@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./Css/cdn.jsdelivr.net_npm_swiper@10.3.0_swiper-bundle.min.css">
     <title>Home</title>
 </head>
 <body>
@@ -33,12 +35,27 @@
       <h5 class="mainSentence">Gaming beyond Boundaries</h5>
       <a class="mainSentence btnLinks" href="#listGames">Play Now!</a>
     </section>
+    
     <section class="container" id="listGames">
       <h4 class="recommendation">Recommendation</h4>
+      <div class="wrapper mySwiper">
+        <div class="card swiper-wrapper">
+          <div class="slide swiper-slide">
+            <div class="image">
+              <img src="./Images/Stray.jpg" alt="Stray">
+            </div>
+            <div class="content">
+              
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
-    <section class="container">
-
-    </section>
+    <!-- Swiper Script -->
+    <script src="./Js/cdn.jsdelivr.net_npm_swiper@10.3.0_swiper-bundle.min.js"></script>
     <!-- Script -->
     <script src="./Js/index.js"></script>
 </body>
