@@ -292,6 +292,85 @@ header {
     font-family: "Bebas Neue";
     text-decoration: none;
 }
+/* Card Hover 2 */
+.wrapper2{
+  position : relative;
+  margin-top: -5px;
+  margin-bottom: 100px;
+  max-width: 1100px;
+  max-height: 100rem;
+  height: 300px;
+  width : 100%;
+  display : flex;
+  flex-direction: row;
+  align-items : center;
+  justify-content : center;
+  padding : 30px;  
+  flex-wrap: wrap;
+}
+.wrapper2 .card2 {
+  position: relative;
+  max-width : 100rem;
+  width: 344px;
+  height : 161px;  
+  background-color : #1a1a1a;
+  margin : 30px 10px;
+  padding : 41px 25px;
+  
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+.wrapper2 .card2:hover {
+  height : 180px;    
+}
+.wrapper2 .card2 .image2 {
+  position : relative;
+  width : 203px;
+  height : 150px;
+  
+  top : -30%;
+  left: 2px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+.wrapper2 .card2 .image2 img {
+  max-width : 100%;
+  width: 271px;
+  height: 150px;
+  border-radius : 15px;
+}
+.wrapper2 .card2 .content2 {
+  position : relative;
+  top : -137px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.4s ease-in-out;
+    
+}
+.wrapper2 .card2:hover .content2 {
+   margin-top : 90px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+}
+.wrapper2 .card2 .content2 .install2{
+    background-color: #162e2e;
+    padding: 20px;
+    border-radius: 10px;
+    color: #98d5be;
+    font-family: "Bebas Neue";
+    text-decoration: none;
+}
+.genre{
+  position: relative;
+}
 /* Swiper */
 .swiper {
   margin-top: 10px;
@@ -304,6 +383,29 @@ header {
   background-color: #162e2e;
   border-radius: 10px;
   color: #98d5be !important;
+}
+.slideWidth {
+  width: 220px !important;
+  margin-left: 20px;
+  margin-right: 20px !important ;
+}
+.swiperHeight{
+  max-width: 100rem;
+  height: 378px !important;
+}
+.nav-btn2{
+  height: 100px !important;
+  width: 50px !important;
+  background-color: #162e2e;
+  border-radius: 10px;
+  color: #98d5be !important;
+  top: var(--swiper-navigation-top-offset,30%) !important;
+}
+.nextbtn{
+  margin-right: 150px;
+}
+.prevbtn{
+  margin-left: 150px;
 }
 /* Small Screen */
 @media (max-width: 576px) {
