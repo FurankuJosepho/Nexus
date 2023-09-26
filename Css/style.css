@@ -35,7 +35,11 @@ header {
   padding: 0 10px;
   /* border: 2px solid red; */
 }
-
+header nav input{
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
 .navbar {
   display: flex;
   padding: 22px 0;
@@ -421,6 +425,21 @@ footer{
   height: 100px;
   background-color: #162e2e;
   margin-top: 100px;
+}
+.contact{
+  color: #98d5be;
+  text-align: center;
+  padding: 20px;
+}
+.contactSence{
+  color: #98d5be;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.contact .bi {
+  color: #98d5be;
+  margin: 10px;
 }
 /* Swiper */
 .swiper {
