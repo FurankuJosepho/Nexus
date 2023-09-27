@@ -617,6 +617,10 @@ input {
   height: 35px;
   width: 35px;
 }
+.toggle.active::before {
+  background-color: #162e2e;
+  left: calc(100% - 39px - 14px);
+}
   .navbar {
     margin: 0;
     font-size: 0.9rem;
